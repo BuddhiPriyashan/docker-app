@@ -16,6 +16,7 @@ pipeline {
                 withDockerRegistry([url: "", credentialsId: "dockerbuildbot-index.docker.io"]) {
                     sh("docker push docker/getting-started")
                 }
+	    echo "====success========"
             }
         }
     }
